@@ -1,0 +1,61 @@
+.InfoBox{
+    margin-top:2rem;
+    display:flex;
+    justify-content:center;
+}
+
+.cardContainer .MuiCard-root{
+    width:380px;
+    border-radius:24px;
+    overflow:hidden;
+
+    background:rgba(255,255,255,0.92);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.25);
+
+    transition:.35s;
+}
+
+.cardContainer .MuiCard-root:hover{
+    transform:translateY(-8px);
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.35);
+}
+
+.cardContainer img{
+    transition:.5s;
+}
+
+.cardContainer:hover img{
+    transform:scale(1.05);
+}
+
+.MuiCardContent-root{
+    padding:22px !important;
+}
+
+.MuiTypography-h5{
+    font-weight:700 !important;
+    color:#183153;
+}
+
+.MuiTypography-body2 p{
+    margin:.55rem 0;
+    font-size:.96rem;
+    color:#555;
+    line-height:1.6;
+}
+
+.MuiTypography-body2 p:last-child{
+    margin-top:1rem;
+    padding-top:1rem;
+    border-top:1px solid #eee;
+}
+
+.weather-icon{
+    vertical-align:middle;
+    color:#ff9800;
+}

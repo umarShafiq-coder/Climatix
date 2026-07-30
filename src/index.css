@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    background:
+        linear-gradient(
+            rgba(8,47,73,0.65),
+            rgba(19,84,122,0.70)
+        ),
+        url("https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* subtle floating weather icons */
+
+body::before{
+    content:"☀️  ☁️  🌤️  ☀️  ☁️";
+    position:fixed;
+    top:10%;
+    left:-5%;
+    width:120%;
+    font-size:2rem;
+    letter-spacing:6rem;
+    opacity:0.08;
+    pointer-events:none;
+    animation:floatIcons 45s linear infinite;
+}
+
+body::after{
+    content:"🌦️  ⛅  ☀️  ☁️";
+    position:fixed;
+    bottom:15%;
+    right:-5%;
+    width:120%;
+    font-size:2rem;
+    letter-spacing:6rem;
+    opacity:0.06;
+    pointer-events:none;
+    animation:floatIconsReverse 55s linear infinite;
+}
+
+@keyframes floatIcons{
+    from{
+        transform:translateX(-5%);
+    }
+    to{
+        transform:translateX(5%);
+    }
+}
+
+@keyframes floatIconsReverse{
+    from{
+        transform:translateX(5%);
+    }
+    to{
+        transform:translateX(-5%);
+    }
+}
