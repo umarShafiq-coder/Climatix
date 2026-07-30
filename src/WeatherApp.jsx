@@ -34,7 +34,7 @@ export default function WeatherApp() {
     >
 
       <h1 style={{fontWeight:"700", marginBottom:"8px", position:"relative", bottom:"50px", right:"20px"}}>
-      <img src="/favicon.png" alt="Logo" style={{height:"140px", position:"relative", top:"52px"}} />
+      <img src={`${import.meta.env.BASE_URL}favicon.png`} alt="Logo" style={{height:"140px", position:"relative", top:"52px"}} />
       Climatix
     </h1>
 
